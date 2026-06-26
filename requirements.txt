@@ -7,8 +7,3 @@ pydantic
 email-validator
 python-multipart
 groq
-<<<<<<< HEAD
-=======
-sqlalchemy-utils
-
->>>>>>> 6ad780f (fixed backend logic and improved risk calculation)

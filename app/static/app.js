@@ -163,17 +163,10 @@ function renderTable(patients) {
       </td>
       <td class="td-dob">${formatDate(p.date_of_birth)}</td>
       <td class="td-email">${escHtml(p.email)}</td>
-<<<<<<< HEAD
-      <td class="num-col">${badge(p.glucose, 'glucose')}</td>
-      <td class="num-col">${badge(p.haemoglobin, 'haemoglobin')}</td>
-      <td class="num-col">${badge(p.cholesterol, 'cholesterol')}</td>
-      <td>${riskBadge(p.risk_level)}</td>
-=======
       <td class="num-col">${labBadge(p.glucose, "glucose")}</td>
       <td class="num-col">${labBadge(p.haemoglobin, "haemoglobin")}</td>
       <td class="num-col">${labBadge(p.cholesterol, "cholesterol")}</td>
       <td class="risk-col">${riskBadge(p.risk_level)}</td>
->>>>>>> 6ad780f (fixed backend logic and improved risk calculation)
       <td class="remarks-col">
         ${p.remarks
           ? `<span class="remarks-text">${escHtml(p.remarks)}</span>`
@@ -424,13 +417,9 @@ async function openView(id) {
       </div>
       <div class="remarks-block">
         <div class="view-field-label">AI Health Assessment (Groq AI)</div>
-<<<<<<< HEAD
-        <div class="view-field-value">${p.remarks ? escHtml(p.remarks) : "Generating…"}</div>
-=======
         <div class="view-field-value">
           ${p.remarks ? escHtml(p.remarks) : "<em>Generating…</em>"}
         </div>
->>>>>>> 6ad780f (fixed backend logic and improved risk calculation)
       </div>
     `;
 
